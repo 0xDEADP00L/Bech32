@@ -86,7 +86,7 @@ extension SegwitAddrCoder {
         
         case encodingCheckFailed
         
-        var localizedDescription: String {
+        public var errorDescription: String? {
             switch self {
             case .bitsConversionFailed:
                 return "Failed to perform bits conversion"

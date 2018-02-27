@@ -157,7 +157,7 @@ extension Bech32 {
         case invalidCharacter
         case checksumMismatch
         
-        var localizedDescription: String {
+        public var errorDescription: String? {
             switch self {
             case .checksumMismatch:
                 return "Checksum doesn't match"
